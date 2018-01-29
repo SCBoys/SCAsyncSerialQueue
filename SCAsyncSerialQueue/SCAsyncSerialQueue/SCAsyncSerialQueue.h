@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "SCSignal.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface SCAsyncSerialQueue : NSObject
 
 - (void)addOperation:(void(^)(SCSignal *signal))operation;
@@ -16,3 +18,4 @@
 - (void)start;
 
 @end
+NS_ASSUME_NONNULL_END

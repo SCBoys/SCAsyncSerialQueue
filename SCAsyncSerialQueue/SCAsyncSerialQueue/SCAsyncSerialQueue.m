@@ -19,10 +19,12 @@ static NSMutableDictionary *__asyncQueues;
 @end
 @implementation SCAsyncSerialQueue
 
+#pragma mark - init
 + (void)load {
     __asyncQueues = @{}.mutableCopy;
 }
 
+#pragma mark - life cycle
 - (instancetype)init
 {
     self = [super init];
@@ -40,6 +42,7 @@ static NSMutableDictionary *__asyncQueues;
     [self beginNext];
 }
 
+#pragma mark - public method
 - (void)addOperation:(void(^)(SCSignal *signal))operation {
     [self.operations addObject:operation];
 }
@@ -50,6 +53,7 @@ static NSMutableDictionary *__asyncQueues;
     [self beginNext];
 }
 
+#pragma mark - pri method
 - (void)beginNext {
     self.operateIndex++;
     if (self.operateIndex >= self.operations.count) {

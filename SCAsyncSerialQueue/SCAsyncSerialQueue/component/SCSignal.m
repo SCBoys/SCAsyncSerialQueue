@@ -11,7 +11,9 @@
 @implementation SCSignal
 
 - (void)end {
-    [self.delgate callback];
+    if ([self.delgate respondsToSelector:@selector(scSignalNotificateOperationEnd)]) {
+        [self.delgate scSignalNotificateOperationEnd];
+    }
 }
 
 @end

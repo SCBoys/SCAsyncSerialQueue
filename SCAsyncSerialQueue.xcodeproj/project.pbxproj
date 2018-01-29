@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		685447E7201F518900A06A09 /* TestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 685447E6201F518900A06A09 /* TestQueue.m */; };
+		685447EA201F63BB00A06A09 /* SCAsyncSerialQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 685447E8201F63BB00A06A09 /* SCAsyncSerialQueue.m */; };
 		8FE1CF46201F097100BAA6C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF45201F097100BAA6C7 /* AppDelegate.m */; };
 		8FE1CF49201F097100BAA6C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF48201F097100BAA6C7 /* ViewController.m */; };
 		8FE1CF4C201F097200BAA6C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE1CF4A201F097200BAA6C7 /* Main.storyboard */; };
 		8FE1CF4E201F097200BAA6C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE1CF4D201F097200BAA6C7 /* Assets.xcassets */; };
 		8FE1CF51201F097200BAA6C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE1CF4F201F097200BAA6C7 /* LaunchScreen.storyboard */; };
 		8FE1CF54201F097200BAA6C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF53201F097200BAA6C7 /* main.m */; };
-		8FE1CF5D201F098800BAA6C7 /* SCAsyncSerialQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF5C201F098800BAA6C7 /* SCAsyncSerialQueue.m */; };
 		8FE1CF61201F138D00BAA6C7 /* SCSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF60201F138D00BAA6C7 /* SCSignal.m */; };
-		8FE1CF64201F192200BAA6C7 /* SCAsycOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF63201F192200BAA6C7 /* SCAsycOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		685447E5201F518900A06A09 /* TestQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestQueue.h; sourceTree = "<group>"; };
-		685447E6201F518900A06A09 /* TestQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestQueue.m; sourceTree = "<group>"; };
+		685447E8201F63BB00A06A09 /* SCAsyncSerialQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAsyncSerialQueue.m; sourceTree = "<group>"; };
+		685447E9201F63BB00A06A09 /* SCAsyncSerialQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAsyncSerialQueue.h; sourceTree = "<group>"; };
 		8FE1CF41201F097100BAA6C7 /* SCAsyncSerialQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAsyncSerialQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE1CF44201F097100BAA6C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FE1CF45201F097100BAA6C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,12 +30,8 @@
 		8FE1CF50201F097200BAA6C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FE1CF52201F097200BAA6C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FE1CF53201F097200BAA6C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8FE1CF5B201F098800BAA6C7 /* SCAsyncSerialQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAsyncSerialQueue.h; sourceTree = "<group>"; };
-		8FE1CF5C201F098800BAA6C7 /* SCAsyncSerialQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAsyncSerialQueue.m; sourceTree = "<group>"; };
 		8FE1CF5F201F138D00BAA6C7 /* SCSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSignal.h; sourceTree = "<group>"; };
 		8FE1CF60201F138D00BAA6C7 /* SCSignal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSignal.m; sourceTree = "<group>"; };
-		8FE1CF62201F192200BAA6C7 /* SCAsycOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAsycOperation.h; sourceTree = "<group>"; };
-		8FE1CF63201F192200BAA6C7 /* SCAsycOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAsycOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +69,6 @@
 				8FE1CF45201F097100BAA6C7 /* AppDelegate.m */,
 				8FE1CF47201F097100BAA6C7 /* ViewController.h */,
 				8FE1CF48201F097100BAA6C7 /* ViewController.m */,
-				685447E5201F518900A06A09 /* TestQueue.h */,
-				685447E6201F518900A06A09 /* TestQueue.m */,
 				8FE1CF4A201F097200BAA6C7 /* Main.storyboard */,
 				8FE1CF4D201F097200BAA6C7 /* Assets.xcassets */,
 				8FE1CF4F201F097200BAA6C7 /* LaunchScreen.storyboard */,
@@ -90,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				8FE1CF5E201F135C00BAA6C7 /* component */,
-				8FE1CF5B201F098800BAA6C7 /* SCAsyncSerialQueue.h */,
-				8FE1CF5C201F098800BAA6C7 /* SCAsyncSerialQueue.m */,
+				685447E9201F63BB00A06A09 /* SCAsyncSerialQueue.h */,
+				685447E8201F63BB00A06A09 /* SCAsyncSerialQueue.m */,
 			);
 			path = SCAsyncSerialQueue;
 			sourceTree = "<group>";
@@ -101,8 +93,6 @@
 			children = (
 				8FE1CF5F201F138D00BAA6C7 /* SCSignal.h */,
 				8FE1CF60201F138D00BAA6C7 /* SCSignal.m */,
-				8FE1CF62201F192200BAA6C7 /* SCAsycOperation.h */,
-				8FE1CF63201F192200BAA6C7 /* SCAsycOperation.m */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -179,11 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE1CF61201F138D00BAA6C7 /* SCSignal.m in Sources */,
-				685447E7201F518900A06A09 /* TestQueue.m in Sources */,
-				8FE1CF64201F192200BAA6C7 /* SCAsycOperation.m in Sources */,
-				8FE1CF5D201F098800BAA6C7 /* SCAsyncSerialQueue.m in Sources */,
 				8FE1CF49201F097100BAA6C7 /* ViewController.m in Sources */,
 				8FE1CF54201F097200BAA6C7 /* main.m in Sources */,
+				685447EA201F63BB00A06A09 /* SCAsyncSerialQueue.m in Sources */,
 				8FE1CF46201F097100BAA6C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

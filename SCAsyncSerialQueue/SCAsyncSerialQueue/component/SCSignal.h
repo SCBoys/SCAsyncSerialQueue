@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol SCSignalDelegate<NSObject>
-- (void)callback;
+- (void)scSignalNotificateOperationEnd;
 @end
 @interface SCSignal : NSObject
 
-@property (nonatomic, weak) id<SCSignalDelegate> delgate;
+@property (nonatomic, weak, nullable) id<SCSignalDelegate> delgate;
 
 - (void)end;
 
 @end
+
+NS_ASSUME_NONNULL_END
