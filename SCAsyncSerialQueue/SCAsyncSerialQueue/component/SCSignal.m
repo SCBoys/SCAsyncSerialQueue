@@ -10,4 +10,8 @@
 
 @implementation SCSignal
 
+- (void)end {
+    [self.delgate callback];
+}
+
 @end

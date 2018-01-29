@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685447E7201F518900A06A09 /* TestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 685447E6201F518900A06A09 /* TestQueue.m */; };
 		8FE1CF46201F097100BAA6C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF45201F097100BAA6C7 /* AppDelegate.m */; };
 		8FE1CF49201F097100BAA6C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE1CF48201F097100BAA6C7 /* ViewController.m */; };
 		8FE1CF4C201F097200BAA6C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE1CF4A201F097200BAA6C7 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		685447E5201F518900A06A09 /* TestQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestQueue.h; sourceTree = "<group>"; };
+		685447E6201F518900A06A09 /* TestQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestQueue.m; sourceTree = "<group>"; };
 		8FE1CF41201F097100BAA6C7 /* SCAsyncSerialQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAsyncSerialQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE1CF44201F097100BAA6C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FE1CF45201F097100BAA6C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				8FE1CF45201F097100BAA6C7 /* AppDelegate.m */,
 				8FE1CF47201F097100BAA6C7 /* ViewController.h */,
 				8FE1CF48201F097100BAA6C7 /* ViewController.m */,
+				685447E5201F518900A06A09 /* TestQueue.h */,
+				685447E6201F518900A06A09 /* TestQueue.m */,
 				8FE1CF4A201F097200BAA6C7 /* Main.storyboard */,
 				8FE1CF4D201F097200BAA6C7 /* Assets.xcassets */,
 				8FE1CF4F201F097200BAA6C7 /* LaunchScreen.storyboard */,
@@ -174,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE1CF61201F138D00BAA6C7 /* SCSignal.m in Sources */,
+				685447E7201F518900A06A09 /* TestQueue.m in Sources */,
 				8FE1CF64201F192200BAA6C7 /* SCAsycOperation.m in Sources */,
 				8FE1CF5D201F098800BAA6C7 /* SCAsyncSerialQueue.m in Sources */,
 				8FE1CF49201F097100BAA6C7 /* ViewController.m in Sources */,

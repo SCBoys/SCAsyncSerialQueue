@@ -8,38 +8,71 @@
 
 #import "ViewController.h"
 #import "SCAsyncSerialQueue.h"
+#import "TestQueue.h"
 
 @interface ViewController ()
-@property (nonatomic, strong) SCAsyncSerialQueue *queue;
+//@property (nonatomic, strong) SCAsyncSerialQueue *queue;
+@property (nonatomic, strong) TestQueue *queue;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.queue = [[SCAsyncSerialQueue alloc] init];
-    self.queue.maxConcurrentOperationCount = 1;
+    self.queue = [TestQueue queue];
+//    self.queue = [[SCAsyncSerialQueue alloc] init];
+//    self.queue.maxConcurrentOperationCount = 1;
 }
 
 - (IBAction)addClick:(id)sender {
-    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
+    [self.queue addOperation:^(SCSignal *signal) {
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            sleep(2);
+            sleep(3);
             NSLog(@"1");
+            [signal end];
         });
     }];
-    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
-        NSLog(@"2");
+    [self.queue addOperation:^(SCSignal *signal) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            sleep(2);
+            NSLog(@"2");
+            [signal end];
+        });
     }];
-    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
-        NSLog(@"3");
+    [self.queue addOperation:^(SCSignal *signal) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            sleep(1);
+            NSLog(@"3");
+            [signal end];
+        });
     }];
-    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
-        NSLog(@"4");
+    [self.queue addOperation:^(SCSignal *signal) {
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            sleep(3);
+            NSLog(@"4");
+            [signal end];
+        });
     }];
-    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
-        NSLog(@"5");
-    }];
+    [self.queue start];
+    
+//    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
+//        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//            sleep(2);
+//            NSLog(@"1");
+//        });
+//    }];
+//    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
+//        NSLog(@"2");
+//    }];
+//    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
+//        NSLog(@"3");
+//    }];
+//    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
+//        NSLog(@"4");
+//    }];
+//    [self.queue addOperationOnMainThread:^(SCSignal *signal) {
+//        NSLog(@"5");
+//    }];
 }
 
 - (IBAction)end:(id)sender {

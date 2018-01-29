@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol SCSignalDelegate<NSObject>
+- (void)callback;
+@end
 @interface SCSignal : NSObject
+
+@property (nonatomic, weak) id<SCSignalDelegate> delgate;
+
+- (void)end;
 
 @end
